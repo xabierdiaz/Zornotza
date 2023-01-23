@@ -51,7 +51,7 @@ export class Tab1Page implements OnInit {
     let marker5 = L.marker([43.22175, -2.73600], { icon: icon }).addTo(
       this.leafletMap      
     );
-    let marker6 = L.marker([43.22131502967737, 2.7312749721080474
+    let marker6 = L.marker([43.22131502967737, -2.7312749721080474
     ], { icon: icon }).addTo(
       this.leafletMap      
     );
