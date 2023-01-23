@@ -8,9 +8,10 @@ import * as L from 'leaflet';
 })
 export class Tab1Page implements OnInit {
   leafletMap: any;
-  lat: number = 41.1533;
-  lng: number = 20.1683;
-  zoom: number = 8;
+  lat: number = 43.21829;
+  lng: number = - 2.73442;
+  
+  zoom: number = 16;
 
   loadLeafletMap() {
     this.leafletMap = new L.Map('leafletMap');
@@ -32,17 +33,48 @@ export class Tab1Page implements OnInit {
 
     let icon = L.icon({
       iconUrl: 'marker-icon.png',
-
-      iconSize: [30, 40],
+      iconSize: [25, 35],
     });
 
-    let marker = L.marker([this.lat, this.lng], { icon: icon }).addTo(
-      this.leafletMap
+    let marker = L.marker([43.215073740783005,-2.7308718372091714], { icon: icon }).addTo(
+      this.leafletMap      
+    );
+    let marker2 = L.marker([43.22045, -2.73309], { icon: icon }).addTo(
+      this.leafletMap      
+    );
+    let marker3 = L.marker([43.22111,-2.73539], { icon: icon }).addTo(
+      this.leafletMap      
+    );
+    let marker4 = L.marker([43.21983,  -2.7319], { icon: icon }).addTo(
+      this.leafletMap      
+    );
+    let marker5 = L.marker([43.22175, -2.73600], { icon: icon }).addTo(
+      this.leafletMap      
+    );
+    let marker6 = L.marker([43.22131502967737, 2.7312749721080474
+    ], { icon: icon }).addTo(
+      this.leafletMap      
+    );
+    let marker7 = L.marker([43.21829,- 2.73442], { icon: icon }).addTo(
+      this.leafletMap      
     );
 
-    let popup = L.popup().setContent('<h1>TXUPAIK</h1>');
+
+    let popup = L.popup().setContent('<a href="../tabs/tab2">Andres espinosa</a>');
+    let popup2 = L.popup().setContent('<a href="../tabs/tab3">Nagelen eskultura </a>');
+    let popup3 = L.popup().setContent('<a href="../tabs/tab4">Mikel Urdangarin </a>');
+    let popup4 = L.popup().setContent('<a href="../tabs/tab5">Lara Izaguirre</a>');
+    let popup5 = L.popup().setContent('<a href="../tabs/tab6">Udabarri dantza taldea</a>');
+    let popup6 = L.popup().setContent('<a href="../tabs/tab7">Emakumeen Espetxea</a>');
+    let popup7 = L.popup().setContent('<a href="../tabs/tab8">Haizetara</a>');
 
     marker.bindPopup(popup);
+    marker2.bindPopup(popup2);
+    marker3.bindPopup(popup3);
+    marker4.bindPopup(popup4);
+    marker5.bindPopup(popup5);
+    marker6.bindPopup(popup6);
+    marker7.bindPopup(popup7);
 
     
   }
@@ -52,35 +84,4 @@ export class Tab1Page implements OnInit {
   }
 
 
-  listOfMarkers = [
-    {
-      lat: 41.1533,
-
-      lng: 20.1683,
-
-      link: 'https://medium.com/',
-
-      icon: 'marker-icon.png',
-    },
-
-    {
-      lat: 41.4233,
-
-      lng: 20.2683,
-
-      link: 'https://github.com/',
-
-      icon: 'marker-icon.png',
-    },
-
-    {
-      lat: 41.1833,
-
-      lng: 20.5083,
-
-      link: 'https://stackoverflow.com/',
-
-      icon: 'marker-icon.png',
-    },
-  ];
 }
