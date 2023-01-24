@@ -56,6 +56,31 @@ const routes: Routes = [
         loadChildren: () => import('../tab3-jokua/tab3-jokua.module').then(m => m.Tab3JokuaPageModule)
       },
       {
+        path: 'tab4-azalpena',
+        loadChildren: () => import('../tab4-azalpena/tab4-azalpena.module').then(m => m.Tab4AzalpenaPageModule)
+      },
+      {
+        path: 'tab4-jokua',
+        loadChildren: () => import('../tab4-jokua/tab4-jokua.module').then(m => m.Tab4JokuaPageModule)
+      },
+      {
+        path: 'tab5-azalpena',
+        loadChildren: () => import('../tab5-azalpena/tab5-azalpena.module').then(m => m.Tab5AzalpenaPageModule)
+      },
+      {
+        path: 'tab5-jokua',
+        loadChildren: () => import('../tab5-jokua/tab5-jokua.module').then(m => m.Tab5JokuaPageModule)
+      },
+      {
+        path: 'tab4-jokua2',
+        loadChildren: () => import('../tab4-jokua2/tab4-jokua2.module').then(m => m.Tab4Jokua2PageModule)
+      },
+      {
+        path: 'tab5-jokua2',
+        loadChildren: () => import('../tab5-jokua2/tab5-jokua2.module').then(m => m.Tab5Jokua2PageModule)
+      },
+ 
+      {
         path: 'tab6-jokua',
         loadChildren: () => import('../tab6-jokua/tab6-jokua.module').then(m => m.Tab6JokuaPageModule)
       },
