@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Animation, AnimationController } from '@ionic/angular';  
 import * as L from 'leaflet';
+
+
+
 
 @Component({
   selector: 'app-tab1',
@@ -76,12 +80,12 @@ export class Tab1Page implements OnInit {
     marker6.bindPopup(popup6);
     marker7.bindPopup(popup7);
 
-    
   }
 
   ngOnInit(): void {
     this.loadLeafletMap();
   }
 
+  
 
 }

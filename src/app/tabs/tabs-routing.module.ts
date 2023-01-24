@@ -39,6 +39,23 @@ const routes: Routes = [
         path: 'tab8',
         loadChildren: () => import('../tab8/tab8.module').then(m => m.Tab8PageModule)
       },
+      {
+        path: 'tab2-azalpena',
+        loadChildren: () => import('../tab2-azalpena/tab2-azalpena.module').then(m => m.Tab2AzalpenaPageModule)
+      },
+      {
+        path: 'tab2-jokua',
+        loadChildren: () => import('../tab2-jokua/tab2-jokua.module').then(m => m.Tab2JokuaPageModule)
+      },
+      {
+        path: 'tab3-azalpena',
+        loadChildren: () => import('../tab3-azalpena/tab3-azalpena.module').then(m => m.Tab3AzalpenaPageModule)
+      },
+      {
+        path: 'tab3-jokua',
+        loadChildren: () => import('../tab3-jokua/tab3-jokua.module').then(m => m.Tab3JokuaPageModule)
+      },
+
 
       
 

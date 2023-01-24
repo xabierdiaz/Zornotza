@@ -1,17 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true" class="head">
+  <h3
+    style="
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: bold;
+    "
+  >
+    Andres Espinosa
+  </h3>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="fondo">
+    <div style="display: flex; justify-content: center; margin-top: 400px">
+      <img style="height: 200px" src="../../assets/Img/hontza.png" />
+    </div>
+  </div>
 </ion-content>
+<ion-footer class="foot">
+  <a href="../tabs/tab2-azalpena"> <button id="jarraitu">JARRAITU</button></a>
+</ion-footer>
